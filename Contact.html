@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html">
+                <img src="willpfp.png" class="navbar__logo" alt="Logo">
+            </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> 
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item1">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item2">
+                    <a href="Packages.html" class="navbar__links">Packages</a>
+                </li>
+                <li class="navbar__item2">
+                    <a href="Contact.html" class="navbar__links">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="contact">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h3>Submit your Appointment</h3>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div>
+                <label for="Preferred Form of Contact">Preferred Form of Contact:</label>
+                <br>
+                <label>Call</label>
+                <input type="radio" name="Preferred Form of Contact" value="Call">
+                <label>Text</label>
+                <input type="radio" name="Preferred Form of Contact" value="Text">
+                <label>Email</label>
+                <input type="radio" name="Preferred Form of Contact" value="Email">
+            </div>
+            <div>
+                <label for="make">Car Make:</label>
+                <input type="text" id="make" name="make" placeholder="Car Make" required>
+            </div>
+            <div>
+                <label for="model">Car Model:</label>
+                <input type="text" id="model" name="model" placeholder="Car Model" required>
+            </div>
+            <div>
+                <label for="year">Car Year:</label>
+                <input type="text" id="year" name="year" placeholder="Car Year" required>
+            </div>
+            <div>
+                <label>Basic</label>
+                <input type="radio" name="Package" value="Basic">
+                <label>Premium</label>
+                <input type="radio" name="Package" value="Premium">
+            </div>
+            <div>
+                <p>Preferred Time of Contact?</p>
+                <input type="checkbox" name="Time" value="Morning">Morning(9-11EST)<br>
+                <input type="checkbox" name="Time" value="Afternoon">Afternoon(12-4EST)<br>
+                <input type="checkbox" name="Time" value="Evening">Evening(4-10EST)
+            </div>
+            <div>
+                <p>Do want to add any Extras or have any Questions?</p>
+                <textarea id="Questions" name="questions" placeholder="" rows="4"></textarea>
+            </div>
+            <input type="hidden" name="access_key" value="ba5a8464-0d77-406c-ad43-defee731d44e">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <div class="footerB">
+    <div class="footerBottom">
+        <h3>Contact Us</h3>
+        <p>Email:williamautodetaling@gmail.com</p>
+        <p>Phone: +1(808)772-0952</p>
+        <p><a href="https://www.instagram.com/william.autodetailing/"><i class="fa-brands fa-instagram"></i>Instagram</a></p>    </div>
+    <div class="footerBottom">
+        <h3>Quick Links</h3>
+        <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Packages.html">Packages</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="footerBottom">
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.54550133145!2d-80.31186018498568!3d25.782384292689983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C%20FL!5e0!3m2!1sen!2sus!4v1717986702304!5m2!1sen!2sus" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 WILLIAM'S AUTO DETAILING ALL RIGHTS RESERVED</p>
+        </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
